@@ -4,26 +4,42 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Web Programming</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700;900&display=swap"
+      rel="stylesheet"
+    />
     <link rel="stylesheet" href="./css/reset.css" />
+    <link rel="stylesheet" href="./css/style.css" />
   </head>
   <body>
-    <header>
+    <header class="header">
       <!-- TODO: Insert logo here -->
       <nav>
-        <ul>
-          <li>Home</li>
-          <li>Posts</li>
+        <ul class="navigation-list">
+          <li><a href="#web-programming-lab-section">Home</a></li>
+          <li><a href="#posts-section">Posts</a></li>
         </ul>
       </nav>
 
-      <ul>
-        <li>rector@upt.ro</li>
-        <li>0256 403 011</li>
+      <ul class="info-list">
+        <li>
+          <a href="mailto:rector@upt.ro?subject=Web Programming Lab">
+            rector@upt.ro
+          </a>
+        </li>
+        <li><a href="tel:+400256 403 011">0256 403 011</a></li>
       </ul>
     </header>
     <main>
       <section id="web-programming-lab-section">
-        <button>Buton</button>
+        <div class="overlay"></div>
+        <h1>
+          web programming lab <br />
+          2023-2024
+        </h1>
+        <button class="button" type="button">Add new Post</button>
       </section>
       <section id="posts-section"></section>
     </main>
